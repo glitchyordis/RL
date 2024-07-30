@@ -1,0 +1,11 @@
+Findings:
+- rev2, compared to rev1
+    - rev2 seems to perform better. it implements
+        - decayed epsilon greedy for action selection
+        - AdamW optimizer
+        - Huber loss instead of MSE loss
+        - 2 layers of nn.linear with 126 nodes each instead of 3 layer of nn.Linear with 16 nodes each
+        - batch size of 128 instead of 32
+        - lr of 1e-4 instead of 5e-4
+        - 600 training episode instead of 200
+    - perhaps rev 1 can perform on par if let it train for more episodes
